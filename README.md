@@ -1,3 +1,6 @@
+# deutshopping
+A helping hand when you go grocery shopping in Germany
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
