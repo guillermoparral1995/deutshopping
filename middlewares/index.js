@@ -1,10 +1,10 @@
-const imageService = require('./images');
-const translationService = require('./translation');
+const imageMiddleware = require('./images');
+const translationMiddleware = require('./translation');
 const errorHandler = require('./error');
 
 
 module.exports = {
-  imageService,
-  translationService,
+  imageMiddleware,
+  translationMiddleware,
   errorHandler
 }

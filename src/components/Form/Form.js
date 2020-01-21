@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Form.scss';
-import { translate } from '../../api';
 
-const Form = ({ handleShowHeader }) => {
+const Form = ({ handleShowHeader, handleTranslate }) => {
   const [inputText, setInputText] = useState('');
 
   const handleInput = (event) => {
@@ -11,7 +10,7 @@ const Form = ({ handleShowHeader }) => {
   }
 
   const handleSubmit = () => {
-    translate(inputText);
+    handleTranslate(inputText);
   }
   
   return <div className="form-container">
