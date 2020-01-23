@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IonButton, IonInput } from '@ionic/react'
 import './Form.scss';
 
 const Form = ({ handleShowHeader, handleTranslate }) => {
@@ -14,8 +15,8 @@ const Form = ({ handleShowHeader, handleTranslate }) => {
   }
   
   return <div className="form-container">
-    <input type="text" onKeyUp={(e) => handleInput(e)} placeholder='Qué querés buscar?'/>
-    <button type="submit" onClick={() => handleSubmit()}>Buscá!</button>
+    <IonInput type="text" onKeyUp={(e) => handleInput(e)} placeholder='Qué querés buscar?'/>
+    <IonButton type="submit" onClick={() => handleSubmit()}>Buscá!</IonButton>
   </div>
 }
 
